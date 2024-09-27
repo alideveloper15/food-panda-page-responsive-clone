@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
+}
+
+html,body{
+}
+
+
+:root{
+    --pink-btn: #e21b70;
+}
+
+
+.navbar{
+    box-shadow: 0px 1px 50px #88888862 ;
+}
+
+.logo{
+    width: 150px;
+}
+
+button{
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--pink-btn);
+    width: 85px;
+    height: 30px;
+    border: 2px solid #e21b70;
+}
+
+.btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--pink-btn);
+    width: 85px;
+    height: 30px;
+    border: none;
+}
+
+.nav-btn:hover{
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover{
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.btn2:hover{
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #b6145a;
+}
+
+
+/* BODY STARTS */
+
+
+.main{
+    background-color: #f7f7f7;
+    height: auto;
+    position: relative;
+}
+
+.main > .panda-pic{
+
+    position: absolute;
+    width: 70%;
+    height: auto;
+    margin-right: -200px;
+}
