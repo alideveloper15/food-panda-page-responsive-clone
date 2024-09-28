@@ -152,7 +152,8 @@ button{
 
 .input > input{
     width: 100%;
-    /* outline: 10vh rgb(170, 168, 168); */
+    outline: none;
+    border: 1px solid #d1c9c9dd;
 }
 
 .find-food{
@@ -210,3 +211,21 @@ button{
 
 
 /* main body ends */
+
+
+
+/* cities start */
+
+.cities{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+
+.cities > h1{
+    position: relative;
+    margin-top: 10vh;
+}
+/* cities end */
