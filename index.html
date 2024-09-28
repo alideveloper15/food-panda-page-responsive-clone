@@ -23,20 +23,52 @@
         sizes="180x180">
 </head>
 
+<style>
+    @media (min-width: 992px) {
+        .collapse {
+            margin-left: 50%;
+        }
+
+        .main-body{
+            position: relative;
+        }
+        .card{
+            width: 45vw;
+            position: absolute;
+            top: 65%;
+            left: 5vh;
+        }
+
+        /* .left{
+            margin-top: 30vh;
+        }*/
+    }
+
+
+    @media (max-width: 992px) {
+        .collapse {
+            margin-left: -50%;
+        }
+    }
+</style>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-white text-primary-dark d-flex justify-content-around">
-        <div class="container-fluid d-flex justify-content-end">
-            <a class="navbar-brand" href="#"><img
+    <nav class="navbar navbar-expand-lg bg-white text-primary-dark navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand mx-5 d-md-flex justify-content-start" href="#"><img
                     src="img/foodpanda_logo-RGB_horizontal_046b56f4-c577-48b0-ad97-e21cfeb88770_1046x209.jpg"
                     class="logo" alt=""></a>
+            <div class="user-icon d-lg-none me-3 d-md-flex justify-content-end">
+                <i class="fa-solid fa-user"></i>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="log-in d-md-none d-lg-flex">
+                <div class="log-in d-md-none d-lg-flex ms-5 me-4">
                     <button class="btn1 bg-white rounded px-lg-1 py-1 nav-btn">log in</button>
                 </div>
-                <div class="sign-up d-md-none d-lg-flex">
+                <div class="sign-up d-md-none d-lg-flex me-3">
                     <button class="btn2 rounded px-1 py-1 nav-btn">Sign up</button>
                 </div>
-                <div class="global d-md-none d-lg-flex">
+                <div class="global d-md-none d-lg-flex me-3">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -49,18 +81,60 @@
                         </li>
                     </ul>
                 </div>
-                <div class="shopping-bag d-flex justify-content-end">
+                <div class="shopping-bag d-md-flex justify-content-end">
                     <i class="ri-shopping-bag-4-fill"></i>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- body start -->
+    <!-- main start -->
 
-    <div class="main d-flex justify-content-end">
-        <img src="img/refresh-hero-home-pk.png" class="img-fluid panda-pic" alt="">
+    <div class="main d-flex">
+        <div class="left ms-5">
+            <h1 class="d-flex mb-5">It's the food and groceries you love, delivered</h1>
+            <div class="search d-flex">
+                <div class="inp-search rounded bg-white">
+                    <div class="input d-flex rounded ge-3">
+                        <input type="text" placeholder="Your steet and street number" class="rounded ps-3">
+                    </div>
+                    <button class="find-food rounded ms-3">Find food</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="img/refresh-hero-home-pk.png" class="panda-pic" alt="">
+        </div>
     </div>
+
+    <!-- main ends -->
+
+
+
+    <!-- main body starts -->
+
+    <div class="main-body">
+        <h1 class="mt-5 mb-4 ms-5">You prepare the food, we handle the rest</h1>
+        <div class="cook-img">
+            <img src="img/home-vendor-pk.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="card rounded-4 mx-4 row-sm-100 w-md-75 w-lg-50  ">
+            <div class="card-body">
+              <h5 class="card-title">List your restaurant or shop on foodpanda</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+              <p class="card-text">Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+                <br>
+                <br>
+                It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!
+                <br>
+                <br>
+                Interested? Let's start our partnership today!</p>
+              <button class="find-food rounded">Get started</button>
+            </div>
+          </div>
+    </div>
+
+    <!-- main body ends -->
 
 
 
