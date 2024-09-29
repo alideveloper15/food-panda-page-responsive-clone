@@ -157,23 +157,12 @@ button{
 }
 
 .find-food{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    color: white;
-    background-color: var(--pink-btn);
-    width: 90px;
-    height: 40px;
-    border: none;
-}
-
-.find-food:hover{
-    width: 95px;
-    height: 45px;
-    cursor: pointer;
-    transition: 0.4s;
-    background-color: #b6145a;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1rem !important;
+    color: white !important;
+    background-color: var(--pink-btn) !important;
 }
 
 
@@ -227,5 +216,20 @@ button{
 .cities > h1{
     position: relative;
     margin-top: 10vh;
+}
+
+.img-card{
+    width: 20vw;
+    height: 30vh;
+    background-image: url(img/Islamabad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-card > a{
+    position: absolute;
+    top: 75%;
+    left: 5%;
 }
 /* cities end */
