@@ -216,18 +216,24 @@ button{
 .cities > h1{
     position: relative;
     margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-card{
     width: 20vw;
-    height: 30vh;
-    background-image: url(img/Islamabad.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 40vh;
     position: relative;
+    margin-bottom: 3vh;
 }
 
+/* .img-card:hover{
+    background-image: ;
+} */
+
 .img-card > a{
+    font-weight: bold;
     position: absolute;
     top: 75%;
     left: 5%;
